@@ -7,7 +7,7 @@
 }
 
 header a img{
-    width: 15vw;
+    width: 60vw;
 }
 
 nav a{
@@ -24,4 +24,29 @@ footer div img{
 
 .bg-lred{
     background-color: rgb(167, 47, 47);
+}
+
+.bg-img22{
+    background-image: url(../assets/2022concept.png);
+}
+
+.bg-img21{
+    background-image: url(../assets/temp21.jpg);
+}
+.equipos{
+    width: 45vw;
+    margin-top: 15px;
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1vw;
+}
+    .equipos a img{
+        width: 19vw;
+        border: solid 2px black;
+    }
+
+.h-ghead{
+    height: 15vh;
 }
