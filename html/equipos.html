@@ -16,12 +16,12 @@
         </a>
     </header>
     <!-- inicia la nav -->
-    <nav class="navbar navbar-expand-md navbar-light bg-dred">
+    <nav class="navbar navbar-expand-md navbar-light bg-dred border-bottom border-dark border-5">
         <div class="container-fluid d-flex justify-content-start">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="equipos.html">EQUIPOS</a>
@@ -41,36 +41,39 @@
     </nav>
     <!-- termina la nav -->
     <main>
+        <div class="anm-bg">
+            <h1 class="text-center" id="tms-top">EQUIPOS</h1>
+        </div>
         <section class="equipos"><!--inicia seleccion de equipos-->
-                <a class="btn" href="#am" role="button">
-                    <img src="../assets/am.jpg" class="w-100 border border-dark border-3" alt="logo aston martin f1 2022">
+                <a href="#am">
+                    <img src="../assets/am.jpg" class="mt-1 border border-dark border-3" alt="logo aston martin f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/ap.jpg" class="w-100 border border-dark border-3" alt="logo alpine f1 2022">
+                <a href="#ap">
+                    <img src="../assets/ap.jpg" class="mt-1 border border-dark border-3" alt="logo alpine f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/ar.png" class="w-100 border border-dark border-3" alt="logo alfa romeo f1 2022">
+                <a href="#ar">
+                    <img src="../assets/ar.png" class="mt-1 border border-dark border-3" alt="logo alfa romeo f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/at.jpg" class="w-100 border border-dark border-3" alt="logo alphatauri f1 2022">
+                <a href="#at">
+                    <img src="../assets/at.jpg" class="mt-1 border border-dark border-3" alt="logo alphatauri f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/fr.jpg" class="w-100 border border-dark border-3" alt="logo ferrari f1 2022">
+                <a href="#fr">
+                    <img src="../assets/fr.jpg" class="mt-1 border border-dark border-3" alt="logo ferrari f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/ha.jpg" class="w-100 border border-dark border-3" alt="logo hass f1 2022">
+                <a href="#ha">
+                    <img src="../assets/ha.jpg" class="mt-1 border border-dark border-3" alt="logo hass f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/mb.jpg" class="w-100 border border-dark border-3" alt="logo mercedes benz f1 2022">
+                <a href="#mb">
+                    <img src="../assets/mb.jpg" class="mt-1 border border-dark border-3" alt="logo mercedes benz f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/ml.jpg" class="w-100 border border-dark border-3" alt="logo mclaren f1 2022">
+                <a href="#mc">
+                    <img src="../assets/ml.jpg" class="mt-1 border border-dark border-3" alt="logo mclaren f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/rb.jpg" class="w-100 border border-dark border-3" alt="logo redbull f1 2022">
+                <a href="#rb">
+                    <img src="../assets/rb.jpg" class="mt-1 border border-dark border-3" alt="logo redbull f1 2022">
                 </a>
-                <a class="btn" href="#" role="button">
-                    <img src="../assets/wl.jpg" class="w-100 border border-dark border-3" alt="logo williams f1 2022">
+                <a href="#wl">
+                    <img src="../assets/wl.jpg" class="mt-1 border border-dark border-3" alt="logo williams f1 2022">
                 </a>
         </section><!--termina seleccion de equipos-->
         <section class="container-fluid">
@@ -407,12 +410,17 @@
                 </div>
             </div>
         </section>
-    
+        
+        <a href="#tms-top">
+            <button class="button-top">
+                <p>TOP</p>
+            </button>
+        </a>
     </main>
 
 
 <!-- footer -->
-<footer class="bg-light">
+<footer class="bgf-light mt-4">
     <h4>REDES SOCIALES</h4>
     <div class="d-flex">
         <img src="../assets/facebook-logo.png" class="px-1" alt="logo de facebook">

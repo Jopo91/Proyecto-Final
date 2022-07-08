@@ -7,15 +7,23 @@
 }
 
 header a img{
-    width: 60vw;
+    width: 65vw;
 }
+    header img:hover{
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
 
 nav a{
-    font-size: 2vw;
+    font-size: 4.5vw;
+}
+
+.bgf-light{
+    background-color: aliceblue;
 }
 
 footer div img{
-    width: 4vw;
+    width: 10vw;
 }
 
 .bg-dred{
@@ -26,6 +34,28 @@ footer div img{
     background-color: rgb(167, 47, 47);
 }
 
+main+div+h1{
+    font-size: 3vw;
+}
+
+.anm-bg {
+    width: 100vw;
+    height: fit-content;
+    background-color: none;
+    animation-name: anime;
+    animation-duration: 1.9s;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes anime {
+    0% {background-color: none;}
+    25% {background-color: rgba(189, 26, 26, .5);}
+    50% {background-color: rgb(189, 26, 26);}
+    75% {background-color: rgba(189, 26, 26, .5);}
+    100% {background-color: none;}
+}
+
 .bg-img22{
     background-image: url(../assets/2022concept.png);
 }
@@ -34,19 +64,88 @@ footer div img{
     background-image: url(../assets/temp21.jpg);
 }
 .equipos{
-    width: 45vw;
+    width: 100vw;
     margin-top: 15px;
     display: flex;
-    display: inline-block;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 1vw;
 }
     .equipos a img{
-        width: 19vw;
+        width: 45vw;
         border: solid 2px black;
+    }
+
+.button-top{
+    width: 15vw;
+    height: 12vw;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    left: 78vw;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 13%;
+}
+    .button-top p{
+        text-decoration-line: none;
+        color: aliceblue;
+        text-align: center;
+        font-size: 3.5vw;
     }
 
 .h-ghead{
     height: 15vh;
+}
+
+@media only screen and (min-width: 768px) {
+    header a img{
+        width: 45vw;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    footer div img{
+        width: 6vw;
+    }
+    nav a{
+        font-size: 4vw;
+    }
+    .equipos a img{
+        width: 30vw;
+    }
+    .button-top{
+        left: 82vw;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    header a img{
+        width: 28vw;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    footer div img{
+        width: 3.5vw;
+    }
+    nav a{
+        font-size: 3vw;
+    }
+    .equipos{
+        justify-content: none;
+    }
+    .equipos a img{
+        width: 18vw;
+    }
+    .button-top{
+    width: 9vw;
+    height: 7vw;
+    left: 88vw;
+}
+        .button-top p{
+            font-size: 2.7vw;
+        }
 }
