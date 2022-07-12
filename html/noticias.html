@@ -47,29 +47,61 @@
         </div>
         <div class="container-fluid"><!-- inicia primera seccion de noticias -->
             <div class="row">
-                <section class="py-3 px-1 col-md-12 col-xl-6">
+                <section class="noti py-3 px-1 col-md-12 col-xl-6">
                     <h2>GRILL THE GRID</h2>
-                    <a href="#">
+                    <a href="https://youtu.be/N-255QvCrWY">
                         <img src="../assets/gtg.jpg" alt="grill the grid video">
                     </a>
+                    <p>Conoce a los mejores pilotos de la categoria desde otro punto de vista</p>
                 </section>
-                <section class="py-3 px-1 col-md-12 col-xl-6">
+                <section class="noti py-3 px-1 col-md-12 col-xl-6">
                     <h2>POWER RANKING</h2>
-                    <a href="#">
+                    <a href="https://www.formula1.com/en/latest/article.power-rankings-who-took-the-spoils-after-the-sensational-2022-british-grand.2PNRLTmu8vfJ8ItaOCyejG.html">
                         <img src="../assets/powran.jpg" alt="power ranking enlace">
                     </a>
+                    <p>Descubre la calificaion que le otorgan nuestros jueces a los pilotos despues de la ultima carrera</p>
                 </section>
                 <h2>NOTICIAS</h2>
-                <section class="py-3 px-1 col-md-6 col-xl-3">
-                    <a href="">
-                        <img src="" alt="">
+                <section class=" noti py-3 px-1 col-md-6 col-xl-4">
+                    <a href="https://www.formula1.com/en/latest/article.6-winners-and-5-losers-from-the-austrian-grand-prix-who-made-an-impression.F7kOIlnJZlUkT2QKi70Jh.html">
+                        <img src="../assets/w&l.jpg" alt="winners and losers austria f1 2022">
                     </a>
+                    <p>Organizemos quien gano y quien perdio despues de los resultados obtenidos en la ultima carrera</p>
                 </section>
-                <section class="py-3 px-1 col-md-6 col-xl-3">
-                    <a href="">
-                        <img src="" alt="">
+                <section class="noti py-3 px-1 col-md-6 col-xl-4">
+                    <a href="https://www.formula1.com/en/latest/article.schumacher-revels-in-second-straight-points-score-as-magnussen-reveals-he.VSqyxX6PhO63XmRjwHBSE.html">
+                        <img src="../assets/nws2.jpg" alt="noticia f1 2022">
                     </a>
+                    <p>Mick Schumacher habla despues de su segunda carrera en terminando en zona de puntos</p>
                 </section>
+                <section class="col-xl-3 mt-2 py-2 border border-dark border-3"><!-- inicia el form -->
+                    <h3>NEWSLETTER</h3>
+                    <form action="noti.php"> <!-- no existe noti.php -->
+                            <label for="pronombresr">Sr.</label>
+                            <input type="radio" id="pronombresr" value="sr" name="pronombre">
+                            <label for="pronombresra">Sra.</label>
+                            <input type="radio" id="pronombresra" value="sra" name="pronombre">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Jose Rodriguez" required>
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" placeholder="niki.lau1@gmail.com" required>
+                            <br>
+                            <label for="equipofavorito">Equipo Favorito</label>
+                            <select name="" id="equipofavorito">
+                                <option value="AR">Alfa Romeo</option>
+                                <option value="AT">AlphaTauri</option>
+                                <option value="AP">Alpine</option>
+                                <option value="AM">Aston Martin</option>
+                                <option value="FR">Ferrari</option>
+                                <option value="HA">HAAS</option>
+                                <option value="ML">McLaren</option>
+                                <option value="MB">Mercedes Bens</option>
+                                <option value="RB">Red Bull</option>
+                                <option value="WM">Williams</option>
+                            </select>
+                            <input type="submit" value="enviar">
+                        </form>
+                </section><!-- termina el form -->
             </div>
         </div><!-- termina primera seccion del index -->
     </main>
