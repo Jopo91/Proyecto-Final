@@ -1,0 +1,57 @@
+header img{
+    width: 65vw;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
+    @media only screen and (min-width: 768px){
+        width: 45vw;
+    }
+    @media only screen and (min-width: 1200px){
+        width: 28vw;
+    }
+}
+
+nav a{
+    font-size: $txtSizeMD;
+    color: $txtDark;
+    @media only screen and (min-width: 768px){
+        font-size: $txtSizeSM;
+    }
+    @media only screen and (min-width: 1200px){
+        font-size: $txtSizeMD;
+    }
+}
+
+.anm-bg {
+    width: 99vw;
+    height: fit-content;
+    background-color: none;
+    animation-name: anime;
+    animation-duration: 1.9s;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes anime {
+    0% {background-color: none;}
+    25% {background-color: $mainColorT;}
+    50% {background-color: $mainColor}
+    75% {background-color: $mainColorT}
+    100% {background-color: none;}
+}
+
+.bg-dred{
+    background-color: $mainColor;
+}
+
+.bg-lred{
+    background-color: $secondaryColor;
+}
+
+.center{
+    @media only screen and (min-width: 768px){
+        display: flex;
+        justify-content: center;
+    }
+}

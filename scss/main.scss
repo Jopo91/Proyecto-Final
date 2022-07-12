@@ -1,0 +1,106 @@
+//imports
+@import "_vars";
+@import "_nav&head";
+@import "_brkpnts";
+
+*{
+    font-family: $mainFont;
+}
+
+iframe{
+    width: 95vw;
+    @media only screen and (min-width: 1200px){
+        width: 49vw;
+    }
+}
+
+.equipos{
+    width: 100vw;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1vw;
+    @media only screen and (min-width: 1200px){
+        justify-content: none;
+    }
+    a img{
+        width: 45vw;
+        border: solid 2px black;
+        @media only screen and (min-width: 768px){
+            width: 30vw;
+        }
+        @media only screen and (min-width: 1200px){
+            width: 18vw;
+        }
+    }
+}
+
+.button-top{
+    width: 15vw;
+    height: 12vw;
+    background-color: $txtDark;
+    position: sticky;
+    bottom: 0;
+    left: 78vw;
+    border-top-left-radius: 13%;
+    border-top-right-radius: 13%;
+    @media only screen and (min-width: 768px){
+        left: 82vw;
+    }
+    @media only screen and (min-width: 1200px){
+        width: 9vw;
+        height: 7vw;
+        left: 88vw;
+    }
+    p{
+        text-decoration-line: none;
+        color: $thirdColor;
+        text-align: center;
+        font-size: $txtSizeSM;
+        @media only screen and (min-width: 1200px){
+            font-size: $txtSizeSM;
+        }
+    }
+}
+
+.noti{
+    width: 100vw;
+    @media only screen and (min-width: 1200px){
+        width: 49vw;
+    }
+}
+
+.h-ghead{
+    height: 15vh;
+}
+
+.bg-img22{
+    background-image: url(../assets/2022concept.png);
+}
+
+.bg-img21{
+    background-image: url(../assets/temp21.jpg);
+}
+
+.text-bglight{
+    color: $txtLight;
+}
+
+.text-bgdark{
+    color: $txtDark;
+}
+
+.bgf-light{
+    background-color: $thirdColor;
+}
+
+footer div img{
+    width: 10vw;
+    @media only screen and (min-width: 768px){
+        width: 6vw;
+    }
+    @media only screen and (min-width: 1200px){
+        width: 3.5vw;
+    }
+}
