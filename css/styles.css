@@ -99,23 +99,37 @@ iframe {
       width: 9vw;
       height: 7vw;
       left: 88vw; } }
-  .button-top p {
+  .button-top p, .button-top .p-italic {
     text-decoration-line: none;
     color: aliceblue;
     text-align: center;
     font-size: 3vw; }
     @media only screen and (min-width: 1200px) {
-      .button-top p {
+      .button-top p, .button-top .p-italic {
         font-size: 3vw; } }
 
 .noti {
-  width: 100vw; }
+  width: 98vw; }
+  .noti p, .noti .p-italic {
+    font-size: 5vw;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      .noti p, .noti .p-italic {
+        font-size: 4vw; } }
+    @media only screen and (min-width: 1200px) {
+      .noti p, .noti .p-italic {
+        font-size: 2.5vw;
+        font-weight: lighter; } }
   @media only screen and (min-width: 1200px) {
     .noti {
       width: 49vw; } }
 
+.p-italic {
+  font-style: italic; }
+
 .h-ghead {
-  height: 15vh; }
+  height: 15vh;
+  margin: 0, 2vw; }
 
 .bg-img22 {
   background-image: url(../assets/2022concept.png); }

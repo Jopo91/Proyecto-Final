@@ -39,7 +39,7 @@ iframe{
 .button-top{
     width: 15vw;
     height: 12vw;
-    background-color: $txtDark;
+    background-color: map-get($map: $colores, $key: 'txtDark');
     position: sticky;
     bottom: 0;
     left: 78vw;
@@ -55,7 +55,7 @@ iframe{
     }
     p{
         text-decoration-line: none;
-        color: $thirdColor;
+        color: map-get($map: $colores, $key: 'thirdColor');
         text-align: center;
         font-size: $txtSizeSM;
         @media only screen and (min-width: 1200px){
@@ -65,14 +65,31 @@ iframe{
 }
 
 .noti{
-    width: 100vw;
+    width: 98vw;
+    p{
+        font-size: 5vw;
+        font-weight: bold;
+        @media only screen and (min-width: 768px){
+            font-size: 4vw;
+        }
+        @media only screen and (min-width: 1200px){
+            font-size: 2.5vw;
+            font-weight: lighter;
+        }
+    }
     @media only screen and (min-width: 1200px){
         width: 49vw;
     }
 }
 
+.p-italic{
+    @extend p;
+    font-style: italic; 
+}
+
 .h-ghead{
     height: 15vh;
+    margin: 0, 2vw;
 }
 
 .bg-img22{
@@ -84,15 +101,15 @@ iframe{
 }
 
 .text-bglight{
-    color: $txtLight;
+    color: map-get($map: $colores, $key: 'txtLight');
 }
 
 .text-bgdark{
-    color: $txtDark;
+    color: map-get($map: $colores, $key: 'txtDark');
 }
 
 .bgf-light{
-    background-color: $thirdColor;
+    background-color: map-get($map: $colores, $key: 'thirdColor');
 }
 
 footer div img{

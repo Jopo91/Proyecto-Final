@@ -7,10 +7,11 @@ $txtSizeMD: 4vw;
 $txtSizeLG: 5vw;
 $txtSixzeHDR: 8vw; 
 
-// colores
-$mainColor: rgb(189, 26, 26);
-$mainColorT: rgba(189, 26, 26, 0.5);
-$secondaryColor: rgb(167, 47, 47);
-$thirdColor: aliceblue;
-$txtLight: #F5F0F0;
-$txtDark: #0F0E0E;
+$colores:(
+    'mainColor': rgb(189, 26, 26),
+    'mainColorT': rgba(189, 26, 26, 0.5),
+    'secondaryColor': rgb(167, 47, 47),
+    'thirdColor': aliceblue,
+    'txtLight': #F5F0F0,
+    'txtDark': #0F0E0E,
+);

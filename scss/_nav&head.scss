@@ -14,7 +14,7 @@ header img{
 
 nav a{
     font-size: $txtSizeMD;
-    color: $txtDark;
+    color: map-get($map: $colores, $key: 'txtDark');
     @media only screen and (min-width: 768px){
         font-size: $txtSizeSM;
     }
@@ -35,18 +35,18 @@ nav a{
 
 @keyframes anime {
     0% {background-color: none;}
-    25% {background-color: $mainColorT;}
-    50% {background-color: $mainColor}
-    75% {background-color: $mainColorT}
+    25% {background-color: map-get($map: $colores, $key: 'mainColorT')}
+    50% {background-color: map-get($map: $colores, $key: 'mainColor')}
+    75% {background-color: map-get($map: $colores, $key: 'mainColorT')}
     100% {background-color: none;}
 }
 
 .bg-dred{
-    background-color: $mainColor;
+    background-color: map-get($map: $colores, $key: 'mainColor');
 }
 
 .bg-lred{
-    background-color: $secondaryColor;
+    background-color: map-get($map: $colores, $key: 'secondaryColor' );
 }
 
 .center{
