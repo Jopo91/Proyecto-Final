@@ -2,9 +2,6 @@
 
 // fuente
 $mainFont: 'Kdam Thmor Pro', sans-serif;
-$txtSizeSM: 3vw;
-$txtSizeMD: 4vw;
-$txtSizeLG: 5vw;
 $txtSixzeHDR: 8vw; 
 
 $colores:(
@@ -15,3 +12,10 @@ $colores:(
     'txtLight': #F5F0F0,
     'txtDark': #0F0E0E,
 );
+
+//mixin
+@mixin fuentes ($Tfuente, $estilo, $Pfuente){
+    font-size: $Tfuente;
+    font-style: $estilo;
+    font-weight: $Pfuente;
+}

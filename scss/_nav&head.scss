@@ -13,13 +13,10 @@ header img{
 }
 
 nav a{
-    font-size: $txtSizeMD;
+    @include fuentes (4vw, normal, bold);
     color: map-get($map: $colores, $key: 'txtDark');
     @media only screen and (min-width: 768px){
-        font-size: $txtSizeSM;
-    }
-    @media only screen and (min-width: 1200px){
-        font-size: $txtSizeMD;
+        @include fuentes (3vw, normal, bold)
     }
 }
 

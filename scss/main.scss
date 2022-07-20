@@ -7,6 +7,28 @@
     font-family: $mainFont;
 }
 
+h1{
+    @include fuentes(8vw, normal, bold);
+    @media only screen and (min-width: 768px) {
+        @include fuentes(5vw, normal, bold)
+    }
+    @media only screen and (min-width: 768px) {
+        @include fuentes(3.7vw, normal, bold)
+    }
+}
+h2{
+    @include fuentes(6vw, normal, normal);
+    @media only screen and (min-width: 768px) {
+        @include fuentes(4vw, normal, normal)   
+    }
+}
+h3{
+    @include fuentes(4vw, normal, lighter);
+    @media only screen and (min-width: 768px) {
+        @include fuentes(3vw, normal, lighter)
+    }
+}
+
 iframe{
     width: 95vw;
     @media only screen and (min-width: 1200px){
@@ -57,9 +79,9 @@ iframe{
         text-decoration-line: none;
         color: map-get($map: $colores, $key: 'thirdColor');
         text-align: center;
-        font-size: $txtSizeSM;
+        @include fuentes(3.5vw, normal, bold);
         @media only screen and (min-width: 1200px){
-            font-size: $txtSizeSM;
+            @include fuentes(3, normal, normal);
         }
     }
 }
@@ -67,14 +89,12 @@ iframe{
 .noti{
     width: 98vw;
     p{
-        font-size: 5vw;
-        font-weight: bold;
+        @include fuentes(5vw, normal, bold);
         @media only screen and (min-width: 768px){
-            font-size: 4vw;
+            @include fuentes(4vw, normal, bold);
         }
         @media only screen and (min-width: 1200px){
-            font-size: 2.5vw;
-            font-weight: lighter;
+            @include fuentes(2.5vw, normal, lighter);
         }
     }
     @media only screen and (min-width: 1200px){
@@ -84,7 +104,7 @@ iframe{
 
 .p-italic{
     @extend p;
-    font-style: italic; 
+    @include fuentes(5vw, italic, bold); 
 }
 
 .h-ghead{

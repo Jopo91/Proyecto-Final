@@ -13,13 +13,14 @@ header img {
 
 nav a {
   font-size: 4vw;
+  font-style: normal;
+  font-weight: bold;
   color: #0F0E0E; }
   @media only screen and (min-width: 768px) {
     nav a {
-      font-size: 3vw; } }
-  @media only screen and (min-width: 1200px) {
-    nav a {
-      font-size: 4vw; } }
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: bold; } }
 
 .anm-bg {
   width: 99vw;
@@ -55,6 +56,41 @@ nav a {
 
 * {
   font-family: "Kdam Thmor Pro", sans-serif; }
+
+h1 {
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: bold; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: bold; } }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.7vw;
+      font-style: normal;
+      font-weight: bold; } }
+
+h2 {
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: normal; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: normal; } }
+
+h3 {
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: lighter; }
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 3vw;
+      font-style: normal;
+      font-weight: lighter; } }
 
 iframe {
   width: 95vw; }
@@ -103,29 +139,39 @@ iframe {
     text-decoration-line: none;
     color: aliceblue;
     text-align: center;
-    font-size: 3vw; }
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: bold; }
     @media only screen and (min-width: 1200px) {
       .button-top p, .button-top .p-italic {
-        font-size: 3vw; } }
+        font-size: 3;
+        font-style: normal;
+        font-weight: normal; } }
 
 .noti {
   width: 98vw; }
   .noti p, .noti .p-italic {
     font-size: 5vw;
+    font-style: normal;
     font-weight: bold; }
     @media only screen and (min-width: 768px) {
       .noti p, .noti .p-italic {
-        font-size: 4vw; } }
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: bold; } }
     @media only screen and (min-width: 1200px) {
       .noti p, .noti .p-italic {
         font-size: 2.5vw;
+        font-style: normal;
         font-weight: lighter; } }
   @media only screen and (min-width: 1200px) {
     .noti {
       width: 49vw; } }
 
 .p-italic {
-  font-style: italic; }
+  font-size: 5vw;
+  font-style: italic;
+  font-weight: bold; }
 
 .h-ghead {
   height: 15vh;
