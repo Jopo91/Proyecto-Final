@@ -7,6 +7,10 @@
     font-family: $mainFont;
 }
 
+body{
+    background-color: beige;
+}
+
 h1{
     @include fuentes(8vw, normal, bold);
     @media only screen and (min-width: 768px) {
@@ -21,6 +25,9 @@ h2{
     @media only screen and (min-width: 768px) {
         @include fuentes(4vw, normal, normal)   
     }
+    @media only screen and (min-width: 1200px) {
+    @include fuentes(3.2vw, normal, normal)
+    }
 }
 h3{
     @include fuentes(4vw, normal, lighter);
@@ -31,18 +38,21 @@ h3{
 
 iframe{
     width: 95vw;
+    height: 60vw;
     @media only screen and (min-width: 1200px){
         width: 49vw;
     }
 }
 
+.news{
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
 .equipos{
     width: 100vw;
-    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1vw;
     @media only screen and (min-width: 1200px){
         justify-content: none;
     }
@@ -94,7 +104,7 @@ iframe{
             @include fuentes(4vw, normal, bold);
         }
         @media only screen and (min-width: 1200px){
-            @include fuentes(2.5vw, normal, lighter);
+            @include fuentes(2vw, normal, lighter);
         }
     }
     @media only screen and (min-width: 1200px){
