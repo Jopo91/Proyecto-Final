@@ -96,6 +96,33 @@ iframe{
     }
 }
 
+.cal-xxs{
+    @media only screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+.cal-md{
+    @media only screen and (min-width: 1px){
+        display: none;
+    }
+    @media only screen and (min-width: 768px){
+        display: table;
+    }
+    @media only screen and (min-width: 1200px){
+        display: none;
+    }
+}
+
+.cal-xl{
+    @media only screen and (min-width: 1px){
+        display: none;
+    }
+    @media only screen and (min-width: 1200px){
+        display: table;
+    }
+}
+
 .noti{
     width: 98vw;
     p{

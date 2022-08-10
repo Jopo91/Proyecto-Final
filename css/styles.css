@@ -57,6 +57,9 @@ nav a {
 * {
   font-family: "Kdam Thmor Pro", sans-serif; }
 
+body {
+  background-color: beige; }
+
 h1 {
   font-size: 8vw;
   font-style: normal;
@@ -109,11 +112,9 @@ iframe {
 
 .equipos {
   width: 100vw;
-  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1vw; }
+  justify-content: space-around; }
   @media only screen and (min-width: 1200px) {
     .equipos {
       justify-content: none; } }
@@ -156,6 +157,30 @@ iframe {
         font-size: 3;
         font-style: normal;
         font-weight: normal; } }
+
+@media only screen and (min-width: 768px) {
+  .cal-xxs {
+    display: none; } }
+
+@media only screen and (min-width: 1px) {
+  .cal-md {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .cal-md {
+    display: table; } }
+
+@media only screen and (min-width: 1200px) {
+  .cal-md {
+    display: none; } }
+
+@media only screen and (min-width: 1px) {
+  .cal-xl {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  .cal-xl {
+    display: table; } }
 
 .noti {
   width: 98vw; }
